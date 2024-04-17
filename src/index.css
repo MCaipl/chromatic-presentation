@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --spacing-2xs: 2px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 10px;
+    --spacing-lg: 12px;
+    --spacing-xl: 14px;
+    --spacing-2xl: 16px;
+
+    --ci-primary: rgb(23, 221, 195);
+    --ci-secondary: white;
+    --ci-tertiary: black;
+
+    --primary: black;
+    --primary-content: white;
+
+    --secondary: black;
+    --secondary-content: white;
+
+    --accent: black;
+    --accent-content: white;
+
+    --neutral: black;
+    --neutral-content: white;
+
+    --base-1: #FFF;
+    --base-2: #F3F3F3;
+    --base-3: #E5E5E5;
+    --base-content: black;
+
+    --info: #00B5FF;
+    --info-content: black;
+
+    --success: #00A96E;
+    --success-content: black;
+
+    --warning: #FFBE00;
+    --warning-content: black;
+
+    --danger: #FF5861;
+    --danger-content: black;
+}
