@@ -1,16 +1,14 @@
 <script setup lang="ts">
-import { computed } from 'vue'
   
 const props = withDefaults(defineProps<{
   label?: string;
   variant?: string;
-  ui?: unknown;
 }>(), {
   variant: 'primary'
 });
   
 const ui = {
-  wrapper: 'inline-flex items-center flex-shrink-0 py-1.5 px-2.5 gap-x-1.5 rounded-md font-medium text-sm cursor-pointer',
+  wrapper: 'inline-flex items-center flex-shrink-0 py-sm px-md gap-x-sm rounded-md font-medium text-sm cursor-pointer',
   variants: {
     primary: {
       wrapper: 'bg-primary text-primary-content'
@@ -29,21 +27,20 @@ const ui = {
     },
     danger: {
       wrapper: 'bg-danger text-danger-content'
+    },
+    link: {
+      wrapper: 'text-primary hover:underline decoration-accent decoration-2 underline-offset-2'
     }
   }
 }
-
-
 </script>
 
 <template>
-  <div :class="[ui.wrapper]">
+  <div :class="[ui.wrapper, ui.variants[props.variant].wrapper]">
     <slot name="leading"></slot>
-    <slot>
-      <span>
-        {{ label }}
-      </span>
-    </slot>
+    <span>
+      {{ label }}
+    </span>
     <slot name="trailing"></slot>
   </div>
 </template>

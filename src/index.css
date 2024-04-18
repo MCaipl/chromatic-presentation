@@ -44,3 +44,24 @@
     --danger: #FF5861;
     --danger-content: black;
 }
+
+.blue {
+    --ci-primary: rgb(23, 221, 195);
+    --ci-secondary: white;
+    --ci-tertiary: black;
+
+    --accent: black;
+    --accent-content: white;
+
+    --primary: #0085ca;
+    --primary-content: white;
+
+    --secondary: black;
+    --secondary-content: white;
+
+    --base-1: #FFF;
+    --base-2: #F3F3F3;
+    --base-3: #E5E5E5;
+    --base-content: black;
+}
+

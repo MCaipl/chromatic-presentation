@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
 import Content from "./components/Content.vue";
+import Lane from "./components/Lane.vue";
+import Promo from "./components/Promo.vue";
 </script>
 
 <template>
@@ -11,15 +13,11 @@ import Content from "./components/Content.vue";
         <Content img="/tigers.jpg"/>
       </div>
 
-      <div class="grid grid-cols-4 gap-4">
-        <Content img="/duck.jpg"/>
-        <Content img="/owl.jpg"/>
-        <Content img="/bear.jpg"/>
-        <Content img="/dog.jpg"/>
-        <Content img="/donkey.jpg"/>
-        <Content img="/eagle.jpg"/>
-        <Content img="/penguin.jpg"/>
-      </div>
+
+      <Promo />
+      
+      <Lane></Lane>
+
     </div>
   </div>
 </template>
