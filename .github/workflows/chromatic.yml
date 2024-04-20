@@ -7,14 +7,12 @@ on: push
 jobs:
   chromatic:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [15]
+
     steps:
       - uses: actions/checkout@v3
       - uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: 7
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
