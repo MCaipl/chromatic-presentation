@@ -13,8 +13,8 @@ const props = withDefaults(defineProps<{
 
 <template>
   <Button :label :variant>
-    <template #trailing>
-      <Icon icon="heroicons:arrow-right-16-solid" class="text-xl"/>
+    <template #leading>
+    <Icon icon="heroicons:calendar-16-solid" class="text-xl"/>
     </template>
   </Button>
 </template>
