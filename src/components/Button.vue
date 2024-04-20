@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 });
   
 const ui = {
-  wrapper: 'inline-flex items-center flex-shrink-0 py-sm px-md gap-x-sm rounded-md font-medium text-sm cursor-pointer',
+  wrapper: 'inline-flex items-center flex-shrink-0 py-sm px-md gap-x-sm rounded-md font-medium text-lg cursor-pointer',
   variants: {
     primary: {
       wrapper: 'bg-primary text-primary-content'
